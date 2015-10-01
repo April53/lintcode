@@ -732,6 +732,7 @@ public:
             "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
 
     vector<string> letterCombinations (const string &digits) {
+        if (digits == "") return {};
         vector<string> result;
         dfs(digits, 0, "", result);
         return result;
